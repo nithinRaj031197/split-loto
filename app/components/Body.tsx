@@ -13,13 +13,9 @@ const LandingBody: React.FC = () => {
       >
         <div className="text-center md:text-left md:flex-1 md:mr-8">
           <h4 className="text-4xl font-bold">
-            Less stress when sharing expenses{" "}
-            <span className="">with anyone.</span>
+            Less stress when sharing expenses <span className="">with anyone.</span>
           </h4>
-          <p className="mt-4">
-            Keep track of your shared expenses and balances with housemates,
-            trips, groups, friends, and family.
-          </p>
+          <p className="mt-4">Keep track of your shared expenses and balances with housemates, trips, groups, friends, and family.</p>
           <button className="mt-6 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200">
             Sign Up
           </button>
@@ -37,12 +33,8 @@ const LandingBody: React.FC = () => {
       <section className="bg-dark flex flex-col w-full h-full font-poppins !font-light rounded-md shadow-md animate-fadeIn delay-200">
         <div className="flex w-full text-white">
           <div className="bg-[#2f1b12] w-1/2 h-full flex flex-col items-center">
-            <h2 className="text-center font-bold text-2xl mt-8 text-white">
-              Track Balance
-            </h2>
-            <p className="text-center mt-4 text-white">
-              Keep track of shared expenses, balances, and who owes who.
-            </p>
+            <h2 className="text-center font-bold text-2xl mt-8 text-white">Track Balance</h2>
+            <p className="text-center mt-4 text-white">Keep track of shared expenses, balances, and who owes who.</p>
             <img
               src="https://assets.splitwise.com/assets/home_page/fixtures/asset1-b7eef5474a87c4fa99310094be435f18d83a7e87427b0d035cf9fd5382a92e12.png"
               alt="Track Balance"
@@ -50,13 +42,8 @@ const LandingBody: React.FC = () => {
             />
           </div>
           <div className="bg-[#deaf84] w-1/2 h-full flex flex-col items-center">
-            <h2 className="text-center font-bold text-2xl mt-8 text-white">
-              Organize expenses
-            </h2>
-            <p className="text-center mt-4 text-white">
-              Split expenses with any group: trips, housemates, friends, and
-              family.
-            </p>
+            <h2 className="text-center font-bold text-2xl mt-8 text-white">Organize expenses</h2>
+            <p className="text-center mt-4 text-white">Split expenses with any group: trips, housemates, friends, and family.</p>
             <img
               src="https://assets.splitwise.com/assets/home_page/fixtures/asset2-195991789f28e51ed734fbee4b87bd1fe1d54363aab190b610c79b7e03cf665a.png"
               alt="Organize expenses"
@@ -66,12 +53,8 @@ const LandingBody: React.FC = () => {
         </div>
         <div className="flex w-full">
           <div className="bg-[#97704f] w-1/2 h-full flex flex-col items-center">
-            <h2 className="text-center font-bold text-2xl mt-8 text-white">
-              Add expenses easily
-            </h2>
-            <p className="text-center mt-4 text-white">
-              Quickly add expenses on the go before you forget who paid.
-            </p>
+            <h2 className="text-center font-bold text-2xl mt-8 text-white">Add expenses easily</h2>
+            <p className="text-center mt-4 text-white">Quickly add expenses on the go before you forget who paid.</p>
             <img
               src="https://assets.splitwise.com/assets/home_page/fixtures/asset3-d1bdfeae0e4d9a89351d416b3991160e38c2391cd0db26f6c6cb0331649fa92c.png"
               alt="Add expenses easily"
@@ -79,12 +62,8 @@ const LandingBody: React.FC = () => {
             />
           </div>
           <div className="bg-[#43392f] w-1/2 h-full flex flex-col items-center">
-            <h2 className="text-center font-bold text-2xl mt-8 text-white">
-              Pay friends back
-            </h2>
-            <p className="text-center mt-4 text-white">
-              Settle up with a friend and record any cash or online payment.
-            </p>
+            <h2 className="text-center font-bold text-2xl mt-8 text-white">Pay friends back</h2>
+            <p className="text-center mt-4 text-white">Settle up with a friend and record any cash or online payment.</p>
             <img
               src="https://assets.splitwise.com/assets/home_page/fixtures/asset4-3abaa95d20d133c1948fa1e3d8047890c3d7e274130cfcba5c2a304f74aa1353.png"
               alt="Pay friends back"
@@ -94,12 +73,9 @@ const LandingBody: React.FC = () => {
         </div>
         <div className="h-full w-full bg-[#714432] flex justify-around items-center">
           <div className="text-center">
-            <h3 className="font-bold text-4xl mt-6 text-white">
-              Get even more with PRO
-            </h3>
+            <h3 className="font-bold text-4xl mt-6 text-white">Get even more with PRO</h3>
             <p className="max-w-xs mx-auto mt-4 text-white">
-              Get even more organized with receipt scanning, charts and graphs,
-              currency conversion, and more!
+              Get even more organized with receipt scanning, charts and graphs, currency conversion, and more!
             </p>
             <button className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200 mt-6">
               Sign Up

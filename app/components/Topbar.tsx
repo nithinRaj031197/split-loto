@@ -2,8 +2,8 @@ const TopBar = () => {
   return (
     <div className=" text-black p-4 flex justify-between items-center">
       <div className="flex gap-4">
-          <div className="text-2xl font-bold">💵</div>
-          <div className="text-2xl font-bold">ItsSplit</div>
+        <div className="text-2xl font-bold">💵</div>
+        <div className="text-2xl font-bold">ItsSplit</div>
       </div>
       <nav className="flex gap-4">
         <button>Log in</button>

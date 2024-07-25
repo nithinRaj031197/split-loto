@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TopBar = ({ handleLoginClick}:any) => {
+const TopBar = ({ handleLoginClick, handleSignupClick}:any) => {
   return (
     <div>
       <div className="text-black p-4 flex justify-between items-center">
@@ -10,7 +10,7 @@ const TopBar = ({ handleLoginClick}:any) => {
         </div>
         <nav className="flex gap-4 mr-6">
           <button onClick={handleLoginClick}>Log in</button>
-          <button className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200">
+          <button onClick={handleSignupClick} className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200">
             Sign up
           </button>
         </nav>

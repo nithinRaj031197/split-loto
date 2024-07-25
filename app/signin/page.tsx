@@ -8,13 +8,17 @@ import { signIn } from "next-auth/react";
 const SignIn = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [phone,setPhone] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
   };
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-slate-950 via-gray-600 to-gray-900 flex justify-center items-center shadow-lg">
+    <div  style={{
+      background: "linear-gradient(145deg, #663d2d, #000)",
+    }} 
+    className="fixed inset-0 flex justify-center items-center shadow-lg">
       <div className="bg-white p-6 rounded-l-lg shadow-md max-w-sm w-full flex flex-col justify-center" style={{ height: '25rem' }}>
         <h2 className="text-2xl font-bold mb-4 text-center">Log In</h2>
         <form onSubmit={handleSubmit}>
@@ -25,7 +29,7 @@ const SignIn = () => {
               id="email"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-3 py-2 h-16 border border-gray-300 rounded-md bg-gray-400 opacity-40"
+              className="w-full px-3 py-2 h-16 border border-gray-300 rounded-md bg-gray-400 opacity-40 font-semibold"
             />
           </div>
           <div className="mb-4">
@@ -35,7 +39,7 @@ const SignIn = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md h-16 bg-gray-400 opacity-40"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md h-16 bg-gray-400 opacity-40 font-semibold"
             />
           </div>
           <button
@@ -52,11 +56,11 @@ const SignIn = () => {
           <div className="mb-4 max-w-[20rem] w-full">
             <label htmlFor="email" className="block text-white mb-1">Phone Number</label>
             <input
-              type="text"
-              id="email"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              className=" px-3 py-2 h-16 border border-gray-300 rounded-md bg-gray-400 opacity-40 max-w-[20rem] w-full"
+              type="string"
+              id="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className=" px-3 py-2 h-16 border border-gray-300 rounded-md bg-gray-400 opacity-40 max-w-[20rem] w-full font-semibold"
             />
           </div>
 

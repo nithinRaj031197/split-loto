@@ -11,6 +11,9 @@ export default function Home() {
   const NavigateLoginClick = () => {
      router.push("/signin");
   };
+  const NavigateSignupClick = () => {
+     router.push("/signup");
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -20,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <TopBar handleLoginClick={NavigateLoginClick} />
+        <TopBar handleLoginClick={NavigateLoginClick} handleSignupClick={NavigateSignupClick} />
       <Body />
       <Footer/>
       </> 

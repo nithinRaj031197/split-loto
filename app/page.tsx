@@ -1,10 +1,17 @@
 "use client";
+
 import Head from "next/head";
 import TopBar from "./components/Topbar";
 import Footer from "./components/Footer";
 import Body from "./components/Body";
+import { useRouter } from "next/navigation";
 
-export default async function Home() {
+export default function Home() {
+  const router = useRouter();
+  const NavigateLoginClick = () => {
+     router.push("/signin");
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
@@ -12,11 +19,11 @@ export default async function Home() {
         <meta name="description" content="A stunning landing page built with Next.js and Tailwind CSS" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <TopBar />
+      <>
+        <TopBar handleLoginClick={NavigateLoginClick} />
       <Body />
-      <main className="flex-grow"></main>
-      <Footer />
+      <Footer/>
+      </> 
     </div>
   );
 }

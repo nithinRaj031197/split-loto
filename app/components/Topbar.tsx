@@ -13,7 +13,7 @@ const TopBar = () => {
           Services
         </a>
         <a href="#contact" className="hover:underline">
-          Contact
+          Login
         </a>
       </nav>
     </div>
